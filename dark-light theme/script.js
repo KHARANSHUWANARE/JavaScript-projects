@@ -1,15 +1,17 @@
-let button1=document.querySelector("#btn1");
-button1.onclick=()=>{
-    console.log("button clicked");
-    let a=0;
-    a++;
-    console.log(a);
+let button1=document.getElementById('btn1');
+let body1=document.querySelector("body");
+let theme="light";
+let func1=()=>
+{
+    if(theme==="light")
+    {
+        theme="black";
+        body1.style.backgroundColor="black";
+    }
+    else{
+        theme="light";
+        body1.style.backgroundColor="white";
+    }
+    console.log(theme);
 }
-
-let box=document.getElementById('div1');
-box.onmouseover=(e)=>{
-    console.log("indide div box");
-    console.log(e.type);
-    console.log(e.target);
-   console.dir(e);
-}
+button1.addEventListener("click",func1);
