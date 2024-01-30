@@ -43,3 +43,23 @@ body{
     border-radius: 1rem;
     border: none;
 }
+#new-btn{
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+#msg{
+    color: whitesmoke;
+    font-size: 5vmin;
+}
+
+.msg-container{
+    height: 30vmin;
+}
+
+.hide{
+    display: none;
+}
