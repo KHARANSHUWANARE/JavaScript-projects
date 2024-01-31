@@ -16,9 +16,16 @@ const winpattern=[
     [6,7,8]
 ];
 
+const resetbtn=()=>
+{
+    turno=true;
+    enablebox();
+    msgcontainer.classList.add("hide");
+}
+
 box.forEach((b)=>{
     b.addEventListener("click",()=>{
-        console.log("btn clicked");
+        
         if(turno===true){
             b.innerHTML="x";
             turno=false;
@@ -46,6 +53,15 @@ const disablebox=()=>
     }
 }
 
+const enablebox=()=>
+{
+    for(let b of box)
+    {
+        b.disabled=false;
+        b.innerHTML="";
+    }
+}
+
 const checkwinner=()=>
 {
     for(let pattern of winpattern)
@@ -65,3 +81,6 @@ const checkwinner=()=>
         }
     }
 }
+
+newgamebtn.addEventListener("click",resetbtn);
+reset.addEventListener("click",resetbtn);
