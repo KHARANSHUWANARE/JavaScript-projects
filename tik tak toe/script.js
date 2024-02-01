@@ -29,10 +29,12 @@ box.forEach((b)=>{
         if(turno===true){
             b.innerHTML="x";
             turno=false;
+            b.style.color="#ffb31a";
         }
         else{
             b.innerHTML="o";
             turno=true;
+            b.style.color="blue";
         }
         b.disabled=true;
         checkwinner();
