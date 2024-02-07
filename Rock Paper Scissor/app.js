@@ -12,25 +12,27 @@ const gencompchoice = () => {
 }
 let drawgame = () => {
     console.log("draw game");
-    msg.innerHTML="Draw Game";
+    msg.innerHTML="Game Draw,Play again";
+    msg.style.backgroundColor="#081B31";
 }
 
 let showwinner=(userwin,userchoice,compchoice)=>{
    
    user.style.visibility = "visible";
-  
    comp.style.visibility = "visible";
-   user.textContent=userchoice;
-   comp.textContent=compchoice;
+   user.textContent="User Choice: "+userchoice;
+   comp.textContent="Computer Choice: "+compchoice;
     if(userwin)
     {
         console.log("user won");
         msg.innerHTML="User Won";
+        msg.style.backgroundColor="green";
    }
     else 
     {
         console.log("computer won");
-        msg.innerHTML="Computer Won";
+        msg.innerHTML="Computer Won,User Lost";
+        msg.style.backgroundColor="red";
     }
 }
 const playgame = (userchoice) => {
