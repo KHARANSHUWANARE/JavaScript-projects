@@ -30,7 +30,17 @@ function mynavlink(n){
     n.addEventListener('click',linkaction);
 }
 
+
+
 /*=============== ADD BLUR HEADER ===============*/
+
+const blurheader=()=>{
+    const header=document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('blur-header')
+                        :header.classList.remove('blur-header')
+}
+
+window.addEventListener('scroll ',blurheader);
 
 
 /*=============== EMAIL JS ===============*/
