@@ -16,6 +16,9 @@
     <title>Responsive portfolio website - Bedimcode</title>
 
     <style>
+        .footer div ul li {
+  color: white;
+    }
     </style>
 </head>
 
@@ -23,11 +26,11 @@
     <!--==================== HEADER ====================-->
     <header class="header " id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Tailer</a>
+            <a href="#" class="nav__logo">Kharanshu</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li>
                         <a href="#work" class="nav__link">Work</a>
@@ -218,7 +221,7 @@
                     <div class="skills_content grid">
                         <div class="skills_box">
                             <img src="./html-1.svg" alt="image" class="skills__img">
-                            <span class="skill_name">Html</span>
+                            <span class="skill_name " >Html</span>
                         </div>
                         <div class="skills_box">
                             <img src="./css-3.svg" alt="image" class="skills__img">
@@ -335,11 +338,31 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#home" class="footer__link" style="color: white;font-weight: 600;">Home</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link" style="color: white;font-weight: 600;">Work</a>
+                </li>
 
+                <li>
+                    <a href="#info" class="footer__link" style="color: white; font-weight: 600;">Info</a>
+                </li>
+
+            </ul>
+
+            <span class="footer__copy">
+              &#169;  All Right Reserved By Kharanshu Wanare
+            </span>
+        </div>
     </footer>
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
