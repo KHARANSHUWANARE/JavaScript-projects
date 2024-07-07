@@ -284,7 +284,7 @@
                 <article class="services__card">
                     <i class="ri-database-2-fill services_icon"></i>
                     <h3 class="services__title">
-                       Database Devlopment
+                        Database Devlopment
                     </h3>
 
                     <p class="services__description">
@@ -297,7 +297,39 @@
 
         <!--==================== CONTACT ====================-->
         <section class="contact section" id="contact">
+            <h2 class="section__title">CONTACT ME</h2>
+            <div class="contact__container container grid">
+                <form action="" class="contact__form grid" id="contact-form">
+                    <div class="contact__group grid">
+                        <input type="text" name="user_name" placeholder="Name" required class="contact__input">
+                        <input type="email" name="user_email" placeholder="Email" required class="contact__input">
 
+                    </div>
+
+                    <textarea name="user_message" id="user_message" placeholder="Message" required
+                        class="contact__input contact_area"></textarea>
+                    <button type="submit" class="button contact__button">Send Message</button>
+                    <p class="contact__message" id="contact-message">
+                        Message
+                    </p>
+                </form>
+                <div class="contact__social grid">
+                    <a href="https://www.linkedin.com/in/kharanshu-wanare-8a6753218/" target="_blank"
+                        class="contact__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://github.com/KHARANSHUWANARE" target="_blank" class="contact__social-link">
+                        <i class="ri-github-fill"></i>
+                        <span>Github</span>
+                    </a>
+                    <a href="kharanshuw@gmail.com" target="_blank" class="contact__social-link">
+                        <i class="ri-mail-line"></i>
+                        <span>Gmail</span>
+                    </a>
+
+                </div>
+            </div>
         </section>
     </main>
 
@@ -313,7 +345,7 @@
     <script src=""></script>
 
     <!--=============== EMAIL JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="./script.js"></script>

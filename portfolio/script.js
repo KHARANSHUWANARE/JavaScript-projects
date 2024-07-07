@@ -44,8 +44,24 @@ window.addEventListener('scroll ',blurheader);
 
 
 /*=============== EMAIL JS ===============*/
+const contactform=document.getElementById('contact-form');
+let contactmessage=document.getElementById('contact-message');
+const sendemail=(e)=>{
+    e.preventDefault();
+    emailjs.sendForm('service_bl40bjt','template_ui58e9f','#contact-form','d2mympAFExgYqhRhJ')
+.then(()={
+    //show sent message
+    contactmessage.textContent ='Message sent successfully ';
+    setTimeout(() => {
+        contactmessage.textContent=''
+    }, 5000)
 
+    contactform.reset();
+})
+}
+// serviceID - templateID - #form - publicKey
 
+contactform.addEventListener('submit',sendemail);
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
