@@ -7,7 +7,7 @@ let cityhide = document.querySelector('.city-hide');
 
 
 search.addEventListener('click', () => {
-  const apikey = '4f22328f39fd93e377da9b8d24c70066';
+  const apikey = '';
   let city = document.querySelector('.search-box input').value;
 
   if (city == '')
