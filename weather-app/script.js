@@ -187,7 +187,7 @@ search.addEventListener('click', () => {
 
 /*async function getData() {
   let cityname='nagpur'
-  let key='4f22328f39fd93e377da9b8d24c70066';
+  let key='';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${key}`;
     try {
       const response = await fetch(url);
