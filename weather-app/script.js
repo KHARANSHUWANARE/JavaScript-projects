@@ -7,13 +7,13 @@ let cityhide = document.querySelector('.city-hide');
 
 
 search.addEventListener('click', () => {
-  const apikey = '';
+  //please add key in url
   let city = document.querySelector('.search-box input').value;
 
   if (city == '')
     return;
 
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=`;
 
   fetch(url)
     .then((response) => {
