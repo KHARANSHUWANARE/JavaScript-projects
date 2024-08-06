@@ -13,7 +13,8 @@ search.addEventListener('click', () => {
   if (city == '')
     return;
 
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=4f22328f39fd93e377da9b8d24c70066
+`;
 
   fetch(url)
     .then((response) => {
